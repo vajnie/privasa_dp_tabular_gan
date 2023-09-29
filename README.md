@@ -11,6 +11,9 @@ Package versions used:
 - cudatoolkit 10.0.130 (note that this depends on your hardware)
 - torchvision 0.2.1  
 
+This git repo also tested with 
+conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 cpuonly -c pytorch
+
 ### Files: 
 
 - models.py contains the pytorch model definitions of both D and G and the gradient penalty (GP) (See [Gulrajani et al. 2017](https://arxiv.org/abs/1704.00028). ) calculation.
