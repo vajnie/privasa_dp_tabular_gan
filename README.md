@@ -4,18 +4,20 @@
 
 This repository's model is easiest to run using the same dataset as in the above publication; the Cardio dataset (S. Ulianova 2019), that is freely available https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset. However, other datasets are easy to plug in also by doing the appropriate preprocessing, creating a Dataset class (pytorch) and adjusting the input and output layer sizes accordingly. 
 
-Package versions:
+Package versions used:
 - Pytorch (v. 1.4.0) 
 - autodp (version 0.2)
 - Python 3.6.9,
-- cudatoolkit 10.0.130
+- cudatoolkit 10.0.130 (note that this depends on your hardware)
 - torchvision 0.2.1  
 
 ### Files: 
 
 - models.py contains the pytorch model definitions of both D and G and the gradient penalty (GP) (See [Gulrajani et al. 2017](https://arxiv.org/abs/1704.00028). ) calculation.
 - config.py, pretrain.sh and train_model.sh are used to set configs and train the model, except for the layer configurations of the NN, which need to be changed in the models.py
-- data.py contains the pytorch dataset definition fit for the cardio data. 
+- data.py contains the pytorch dataset definition fit for the cardio data.
+
+- For convenience to get the model running easily, there is the cardio_gan_train.csv, which is the cardio dataset preprocessed (minmaxed and one-hotted).
 
 
 ### Data 
