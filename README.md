@@ -4,15 +4,13 @@
 
 This repository's model is easiest to run using the same dataset as in the above publication; the Cardio dataset (S. Ulianova 2019), that is freely available https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset. However, other datasets are easy to plug in also by doing the appropriate preprocessing, creating a Dataset class (pytorch) and adjusting the input and output layer sizes accordingly. 
 
-Package versions used:
-- Pytorch (v. 1.4.0) 
+Package versions used and code confirmed to run with:
+- Pytorch (v. 1.10.2) 
 - autodp (version 0.2)
-- Python 3.6.9,
-- cudatoolkit 10.0.130 (note that this depends on your hardware)
-- torchvision 0.2.1  
+- Python 3.6.10,
+- cudatoolkit 11.3.1 (note that this depends on your hardware)
+- torchvision 0.11.2 
 
-This git repo also tested with 
-conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 cpuonly -c pytorch
 
 ### Files: 
 
